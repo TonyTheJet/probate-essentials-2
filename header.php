@@ -7,7 +7,7 @@ global $post;
 $menu_items = [
     'common-questions' => 'COMMON QUESTIONS',
     'cases' => 'CASES',
-    'probate-issues' => 'PROBATE-ISSUES'
+    'probate-issues' => 'PROBATE ISSUES'
 ];
 
 ?><!DOCTYPE html>

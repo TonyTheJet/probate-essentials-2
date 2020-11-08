@@ -120,6 +120,10 @@ a, a:hover {
 }
 /* Bootstrap 4 overrides */
 
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 24px;
+}
 
 /* header */
 #header {
@@ -175,6 +179,68 @@ a, a:hover {
 }
 /* super-small screens header */
 /* header */
+
+/* home */
+#home-content {
+    background: #015b7e;
+    color: #fff;
+}
+
+#home-content-border-top {
+    border-top: 10px solid #b09a51;
+}
+
+#home-masthead {
+    background: url('images/home-01.png') center center no-repeat;
+    height: 678px;
+    position: relative;
+    width: 100%;
+}
+
+#home-masthead-tagline {
+    bottom: 55px;
+    left: 40px;
+    position: absolute;
+    width: calc(100% - 80px);
+    z-index: 100;
+}
+
+#home-masthead-tagline-bg {
+    background-color: #000;
+    bottom: 55px;
+    left: 40px;
+    opacity: .31;
+    position: absolute;
+    width: calc(100% - 80px);
+    z-index: 99;
+}
+
+#home-masthead-tagline h2, #home-masthead-tagline-bg h2 {
+    margin: 8px 0;
+}
+
+#home-masthead-tagline-bg h2 {
+    visibility: hidden;
+}
+
+@media only screen and (max-width: 767px){
+    #home-masthead {
+        background: url('images/home-01-mobile.png') center center no-repeat;
+    }
+
+    #home-masthead-tagline h2, #home-masthead-tagline-bg h2 {
+        font-size: 1.0em;
+    }
+}
+
+#home-masthead-tagline-bg {
+
+}
+
+#home-masthead-tagline h2 {
+    opacity: 1.0;
+}
+/* end home */
 
 /* main content */
 #main-content {
