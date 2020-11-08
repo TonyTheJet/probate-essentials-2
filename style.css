@@ -1,0 +1,226 @@
+/*
+Theme Name: Estate Essentials
+Author: Tony Anderson
+Description: Theme created for Hughes Estate Group
+Requires PHP: 7.3
+Version: 0.9
+*/
+
+
+/* Bootstrap 4 overrides */
+a, a:hover {
+    color: #015b7e;
+}
+
+.bg-dark {
+    background-color: #252525 !important;
+}
+
+.bg-secondary {
+    background-color: #b09a51 !important;
+}
+
+.bg-primary {
+    background-color: #015b7e !important;
+}
+
+.btn-primary {
+    background-color: #015b7e !important;
+    border-color: #015b7e !important;
+}
+.btn-primary:hover{
+    background-color:#049cd7 !important;
+    border-color:#049cd7 !important;
+    color:#fff;
+}
+.btn-primary:focus,.btn-primary.focus{
+    background-color: #049cd7 !important;
+    border-color: #049cd7 !important;
+    box-shadow: 0 0 0 0.2rem #72d8eb !important;
+    color: #fff;
+}
+.btn-primary.disabled,.btn-primary:disabled{
+    background-color:#015b7e !important;
+    border-color:#015b7e !important;
+    color: #fff;
+}
+.btn-primary:not(:disabled):not(.disabled):active,.btn-primary:not(:disabled):not(.disabled).active,.show>.btn-primary.dropdown-toggle{
+    background-color:#049cd7 !important;
+    border-color:#049cd7 !important;
+    color:#fff;
+}
+.btn-primary:not(:disabled):not(.disabled):active:focus,.btn-primary:not(:disabled):not(.disabled).active:focus,.show>.btn-primary.dropdown-toggle:focus{
+    box-shadow:0 0 0 .2rem #72d8eb !important;
+}
+
+.btn-outline-primary{
+    border-color: #015b7e !important;
+    color: #015b7e !important;
+}
+.btn-outline-primary:hover{
+    background-color:#015b7e !important;
+    border-color:#015b7e !important;
+    color:#fff !important;
+}
+.btn-outline-primary:focus,.btn-outline-primary.focus{
+    box-shadow:0 0 0 .2rem #72d8eb !important;
+}
+.btn-outline-primary.disabled,.btn-outline-primary:disabled{
+    background-color:transparent;
+    color:#015b7e;
+}
+.btn-outline-primary:not(:disabled):not(.disabled):active,.btn-outline-primary:not(:disabled):not(.disabled).active,.show>.btn-outline-primary.dropdown-toggle{
+    background-color:#015b7e !important;
+    border-color:#015b7e;
+    color:#fff;
+}
+.btn-outline-primary:not(:disabled):not(.disabled):active:focus,.btn-outline-primary:not(:disabled):not(.disabled).active:focus,.show>.btn-outline-primary.dropdown-toggle:focus{
+    box-shadow: 0 0 0 0.2rem #72d8eb;
+}
+
+.btn-secondary {
+    background-color: #b09a51 !important;
+    border-color: #b09a51 !important;
+}
+.btn-secondary:hover{
+    background-color:#b19b51 !important;
+    border-color:#927c31 !important;
+    color:#fff;
+}
+.btn-secondary:focus,.btn-secondary.focus{
+    background-color: #b19b51 !important;
+    border-color: #927c31 !important;
+    box-shadow: none;
+    color: #fff;
+}
+.btn-secondary.disabled,.btn-secondary:disabled{
+    background-color:#b09a51 !important;
+    border-color:#b09a51 !important;
+    color: #fff;
+}
+.btn-secondary:not(:disabled):not(.disabled):active,.btn-secondary:not(:disabled):not(.disabled).active,.show>.btn-secondary.dropdown-toggle{
+    background-color:#927c31 !important;
+    border-color:#927c31 !important;
+    color:#fff;
+}
+.btn-secondary:not(:disabled):not(.disabled):active:focus,.btn-secondary:not(:disabled):not(.disabled).active:focus,.show>.btn-secondary.dropdown-toggle:focus{
+    box-shadow:none;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+}
+
+.text-primary {
+    color: #015b7e !important;
+}
+
+.text-secondary {
+    color: #927c31 !important;
+}
+/* Bootstrap 4 overrides */
+
+
+/* header */
+#header {
+}
+
+#header .nav-item {
+    font-size: 19px;
+}
+
+#social-media-sprite-header {
+    height: 24px;
+    position: absolute;
+    right: 0;
+    top: 10px;
+    width: 87px;
+    z-index: 99;
+}
+
+#social-media-sprite-header .social-media-link {
+    background: url('images/social-media-sprites.png') no-repeat;
+    display: block;
+    float: left;
+    height: 100%;
+    margin-right: 9px;
+    width: 23px;
+}
+
+#social-media-sprite-header .social-media-link:active, #social-media-sprite-header .social-media-link:hover {
+    opacity: 0.7;
+}
+
+#social-media-sprite-header .social-media-link:last-child {
+    margin-right: 0;
+}
+
+#social-media-sprite-header .social-media-link#yt-link {
+    background-position-x: -31px;
+}
+
+#social-media-sprite-header .social-media-link#li-link {
+    background-position: -93px;
+}
+
+/* super-small screens header */
+@media only screen and (max-width: 350px) {
+    #social-media-sprite-header {
+        display: none !important;
+    }
+
+    #top-logo-wrapper img {
+        height: 60px !important;
+    }
+}
+/* super-small screens header */
+/* header */
+
+/* main content */
+#main-content {
+    min-height: 80vh;
+}
+/* main content */
+
+/* footer */
+#footer {
+    font-size: .6em;
+}
+
+#footer a {
+    color: #fff;
+}
+/* footer */
+
+/* misc */
+.crimson-text {
+    font-family: 'Crimson Text', 'serif' !important;
+}
+
+.custom-inner-shadow {
+    box-shadow: 0 12px 54px 0 rgba(0, 0, 0, 0.27) inset;
+}
+
+.custom-shadow {
+    box-shadow: 0 12px 54px 0 rgba(0, 0, 0, 0.27);
+}
+
+.hr-bottom-secondary {
+    border-bottom: 3px solid #b09a51;
+}
+
+.lato-bold {
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+}
+
+.lato-light {
+    font-family: 'Lato', sans-serif;
+    font-weight: lighter;
+}
+
+.lato-regular {
+    font-family: 'Lato', sans-serif;
+    font-weight: normal;
+}
+/* misc */
